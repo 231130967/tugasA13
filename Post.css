@@ -1,0 +1,242 @@
+body{
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  line-height: 80px;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  float: none;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 100%;
+  border-bottom: 2px solid gray;
+
+  display: flex;
+  flex-direction: column;
+
+}
+main{
+  margin: 0 auto;
+  width: 1048px;
+  padding: 10px;
+  background-color: white;
+  height: 1300px;
+  flex: 1;
+}
+footer{
+  margin: 0 auto;
+  width: 100%;
+  background-color: #FFBA49;
+  height: 50pt;
+  line-height: 50px;
+  color: white;
+  bottom: 0;
+}
+footer p{
+  margin: 10px 20px;
+}
+
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+li{
+  display: inline;
+}
+
+header h1{
+  float: left;
+  width: 160px;
+  color: #FFBA49;
+  padding-left: 15px;
+  font-size: 28px;
+}
+header li{
+  float: left;
+}
+header li a{
+  display: block;
+  padding: 8px;
+  width: 80px;
+  text-decoration: none;
+  color: gray;
+}
+header span a{
+  display: block;
+  float: right;
+  padding: 1px;
+  margin-top: 15px;
+  padding-right: 8px;
+  line-height: 40px;
+}
+header span a img{
+  width: 65px;
+  height: 55px;
+  padding-right: 10px;
+}
+
+header span{
+  padding:10px;
+  height: 40px;
+  line-height: 40px;
+}
+
+
+
+
+
+
+
+
+main{
+  margin: 0 auto;
+  width: 1200px;
+
+}
+main section.search{
+  float: none;
+  margin: 25px;
+  
+}
+main section.search input{
+  padding: 10px;
+  width: 85%;
+}
+main section.search span a{
+  float: right;
+  padding: 10px 40px;
+  background-color: #FFBA49;
+  border-radius: 5px;
+  color: white;
+}
+main section.search span a:hover{
+  background-color: white;
+  border: 1px solid #FFBA49;
+  color: #FFBA49;
+}
+
+
+main article.dua{
+  padding-top: 10px; ;
+  width: 100%;
+  height: 400px;
+  line-height: 150px;
+  text-align: center;
+  background-color: #FFBA49;
+  color: white;
+  margin-bottom: 20px;
+}
+
+main article.dua section b{
+  font-size: 70px;  
+}
+
+main article.dua section p{
+  line-height: 0px;
+}
+
+main article.dua section div.tiga{
+  margin-left: 500px;
+  width: 200px;
+  margin-top: 50px;
+  background-color: white;
+  color: #FFBA49;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+}
+
+main article.satu section.satu div.tiga{
+  float: left;
+  margin-left: 10px;
+}
+
+main article.satu section.satu div.tiga img.satu{
+  width: 40px;
+  height: 40px;
+}
+
+main article.satu section.satu div.tiga img.empat{
+  width: 40px;
+  height: 40px;
+}
+
+main article.satu section.satu div.tiga img.dua{
+  width: 50px;
+  height: 40px;
+}
+
+main article.satu section.satu div.tiga img.tiga{
+  width: 40px;
+  height: 40px;
+}
+
+main article.satu section.satu div.tiga img.satu:hover{
+  width: 45px;
+  height: 45px;
+}
+
+main article.satu section.satu div.tiga img.empat:hover{
+  width: 45px;
+  height: 45px;
+}
+
+main article.satu section.satu div.tiga img.dua:hover{
+  width: 55px;
+  height: 45px;
+}
+
+main article.satu section.satu div.tiga img.tiga:hover{
+  width: 45px;
+  height: 45px;
+}
+
+main article.dua section div.tiga:hover{
+  background-color: #FFBA49;
+  border: 1px solid white;
+  color: white;
+}
+main section.satu{
+  width: 350px;
+  height: 200px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+main div.dua{
+  border-bottom: 2px solid grey
+}
+
+main article section div p{
+  text-align: center;
+  line-height: 100px;
+}
+
+main section.satu{
+  margin: 20px;
+  float: left;
+}
+
+
+
+main article.satu section.satu b{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+header li a:hover{
+  color: rgb(255, 184, 53);
+}

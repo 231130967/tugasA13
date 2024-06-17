@@ -1,0 +1,1060 @@
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Varela Round';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  header span.open{
+    display: none;
+    color: #818181;
+    width: fit-content;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #FFBA49;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+header{
+    padding: 0px;
+    float: none;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    float: none;
+    background-repeat: no-repeat;
+    background-image: url(Assets/background.png);
+    background-size: cover;
+}
+
+
+header section{
+    width: 1048px;
+    margin: 0 auto;
+    
+}
+header section article.header{
+    width: 100%;
+    height: 100px;
+}
+main{
+    margin: 0 auto;
+    width: 1048px;
+    padding: 10px;
+    background-color: white;
+    height: 1300px;
+    flex: 1;
+}
+footer{
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgb(255, 184, 53);
+    height: 50pt;
+    line-height: 50px;
+    color: white;
+    bottom: 0;
+}
+footer p{
+    margin: 10px 20px;
+}
+ul{
+    list-style-type: none;
+}
+header h1{
+    float: left;
+    width: 160px;
+    color: #FFBA49;
+    padding-left: 15px;
+    font-size: 28px;
+    margin: 30px 0;
+}
+header li{
+    float: left;
+    text-align: center;
+}
+header li a{
+    display: block;
+    padding: 0;
+    width: fit-content;
+    text-decoration: none;
+    color: gray;
+    margin: 40px 30px;
+
+}
+header li a.utama{
+    color: #FFBA49;
+}
+header li a.utama:after{
+    transform: scaleX(1);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFBA49;
+    transform-origin: bottom right;
+    transform-origin: bottom left; 
+    content: '';
+}
+article.about h2{
+    font-size: 50px;
+}
+article.about p.kata{
+    width: 600px;
+    font-size: 20px;
+    padding: 20px 0;
+
+}
+article.about p.lanjut{
+    line-height: 0;
+    margin: auto 0;
+    width: fit-content;
+    margin-top: 5px;
+}
+article.about{
+    width: fit-content;
+    padding-left: 20px;
+    font-size: 16px;
+    color: gray;
+    height: fit-content;
+    margin: 0;
+}
+li a {
+    display: inline-block;
+    position: relative;
+}
+header li a:after {
+    content: '';
+    position: absolute; 
+    width: 100%; 
+    transform: scaleX(0); 
+    height: 1px; 
+    bottom: 0; 
+    left: 0; 
+    background-color: #FFBA49;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
+}
+
+header li a:hover{
+    color: #FFBA49
+}
+
+header span a{
+    float: right;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    margin-top: 25px;
+}
+header span a img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+header p.lanjut a{
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: rgb(255, 184, 53);
+    width: 200px;
+    padding: 25px 10px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+header p.lanjut a:hover{
+    background-color: white;
+    color: #FFBA49;
+    border: 1px solid#FFBA49;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+a{
+    text-decoration: none;
+}
+li{
+    display: inline;
+}
+
+
+
+
+
+
+
+/* Fitur*/
+
+main tr{
+    text-align: center;
+}
+main td{
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    padding-right: 10px;
+}
+main td a{
+    color: #535353;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffeccd;
+    height: 40px;
+    width: 140px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+main td a p{
+    float: right;
+    margin: 10px 5px;
+    padding: 0;
+}
+main td img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+main span a{
+    color: rgb(255, 184, 53);
+}
+
+main section{
+    padding-left: 20px;
+    width: 100%;
+}
+main section.fitur ul{
+    margin: 40px 0;
+    padding: 0px;
+    margin-bottom: 60px;
+
+}
+main section.fitur li a{
+   background-color: #ffcf80;
+   color: #535353;
+   padding: 20px 45px;
+   margin-right: 20px;
+   border-radius: 10px;
+   font-size: 14px;
+   padding-left: 55px;
+   padding-right: 40px;
+   margin-bottom: 40px;
+
+}
+main section.fitur{
+    margin-top: 100px;
+}
+main section.dokter p.judul{
+    margin-top: 100px;
+}
+main section.produk p.judul{
+    margin-top: 100px;
+}
+main section.artikel p.judul{
+    margin-top: 100px;
+}
+
+
+/* responsif Fitur */
+
+main td a:hover{
+    background-color: white;
+    color: #FFBA49;
+    border: 1px solid#FFBA49;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/*Produk*/
+
+section.produk{
+    background-color: #ffeccd;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    height: 400px;
+    position: relative;
+}
+section.produk img{
+    text-align: center;
+    width: 340px ;
+    height: 340px ;
+    background-image: url(Assets/pg.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
+    
+}
+section.produk article{
+    text-align: center;
+    border-radius: 20px;
+    width: 340px;
+    height: 340px;
+    float: left;
+    margin-bottom: 40px;
+    align-items: center;
+    background-position: center;
+    position: relative;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
+
+}
+section.produk article h4 a{
+    color: #FFBA49;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 4px 4px #ffcf80;
+    display: inline-block;
+    margin-top: 240px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+section.produk article p{
+    margin: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #FFBA49;
+    margin-top: 15px;
+}
+p.bintang img{
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 35px;
+
+}
+
+/*Responsif Produk*/
+
+section.produk article:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    font-size: 20px;
+    background-size: 100%;
+    
+}
+section.produk a img.utama:hover{
+    background-size: 100%;
+    animation: goyang 0.5s;
+    animation-iteration-count: infinite;
+}
+section.produk article h4 a:hover{
+    color: lightsalmon;
+}
+@keyframes goyang{
+    0%{ transform: translate(1px, 1px) rotate(0deg);}
+    10%{ transform: translate(-1px, -2px) rotate(-1deg);}
+    20%{ transform: translate(-3px, 0px) rotate(1deg);}
+    30%{ transform: translate(-3px, 2px) rotate(0deg);}
+    40%{ transform: translate(1px, -1px) rotate(1deg);}
+    50%{ transform: translate(-1px, 2px) rotate(-1deg);}
+    60%{ transform: translate(-3px, 1px) rotate(0deg);}
+    70%{ transform: translate(3px, 1px) rotate(-1deg);}
+    80%{ transform: translate(-1px, -1px) rotate(1deg);}
+    90%{ transform: translate(1px, 2px) rotate(0deg);}
+    100%{ transform: translate(1px, -2px) rotate(-1deg);}
+}
+
+
+
+
+
+
+
+
+/*Artikel*/
+
+main section.artikel ul{
+    margin: 40px 0;
+    padding: 0px;
+}
+section.artikel img{
+    height: 150px;
+    width: 250px;
+    size: 100%;
+    border-radius: 10px;
+    float: left;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
+    
+}
+section.artikel{
+    background-color: #ffeccd;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 650px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
+}
+section.artikel article{
+    margin-top: 10px;
+    background-color: white;
+    width: 990px;
+    height: 150px;
+    border-radius: 20px;
+    margin-right: 45px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px #ffcf80;
+
+}
+section.artikel article h4{
+    padding-left: 260px;
+    margin: 5px;
+    padding-bottom: 5px;
+    color: #535353;
+    padding-top: 10px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
+}
+section.artikel article p{
+    padding-left: 260px;
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #FFBA49;
+}
+article.artikel span{
+    float: none;
+    padding-left: 10px;
+    color: gray;
+}
+
+/*Artikel Responsif*/
+section.artikel article:hover{
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+section.artikel article h4:hover{
+    font-size: 18px;
+}
+section.artikel article img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Dokter*/
+
+main p.judul{
+    font-weight: bold;
+    color: #535353;
+    font-size: 30px;
+    text-shadow: 2px 2px white;
+}
+main p.judul span a{
+    color:#FFBA49;
+    font-size: 20px;
+    -webkit-text-stroke: none;
+}
+main section.dokter{
+    background-color: #ffeccd;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    height: 400px;
+    position: relative;
+}
+main section.dokter article.dokter img{
+    width: 340px ;
+    height: 340px ;
+    position: absolute;
+    left: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
+    
+    
+}
+section.dokter article{
+    text-align: center;
+    border-radius: 20px;
+    width: 340px;
+    height: 340px;
+    background-image: url(Assets/bg.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    float: left;
+    margin-bottom: 40px;
+    align-items: center;
+    background-position: center;
+    position: relative;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
+}
+section.dokter article h4 a{
+    color: #FFBA49;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 4px 4px #ffcf80;
+    display: inline-block;
+    margin-top: 240px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.dokter article p{
+    margin-left: 80px;
+    width: 50%;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #535353;
+    background-color: aliceblue;
+    align-self: center;
+}
+main p.judul span{
+    height: 45px;
+    margin: 0 20px;
+    width: fit-content;
+    float: right;
+}
+
+/*Responsif Dokter*/
+
+section.dokter article:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    font-size: 20px;
+    background-size: 100%;
+    animation: gerak 1.5s;
+    animation-iteration-count: infinite;
+}
+section.dokter article h4 a:hover{
+    color: lightsalmon;
+}
+@keyframes gerak{
+    0%{top: -2%;}
+    50%{top: 2%;}
+    100%{top: -2%;}
+}
+main p.judul span:hover{
+    animation: rotate 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    30%{transform: rotate(-10deg);}
+    60%{transform: rotate(10deg);}
+    100%{transform: rotate(0deg);}
+}
+
+
+
+
+
+
+
+/*RESPONSIF*/
+@media (max-width: 1024px)
+{
+    body{
+        width: 1024px;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+        height: 400px;
+    }
+    .header{
+        width: 800px !important;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    header li a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+    }
+    .about{
+        width: 800px !important;
+        margin: 0 auto !important;
+    }
+    .about h2 {
+        font-size: 30px !important;
+    }
+    .about p {
+        font-size: 18px !important;
+    }
+    .lanjut a{
+        font-size: 14px;
+        width: 150px !important;
+    }
+
+    main{
+        width: 800px;
+    }
+    main .judul{
+        font-size: 22px !important;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td p{
+        font-size: 10px;
+        margin-top: 15px !important;
+        padding: 0;
+    }
+    main td img{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 5px;
+    }
+    main section.dokter{
+        height: 350px;
+        width: 780px;
+    }
+    main section.dokter article.dokter{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.dokter img{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.dokter h4 a{
+        margin-top: 150px !important;
+    }
+    
+    main section.produk{
+        height: 350px;
+        width: 780px;
+    }
+    main section.produk article.produk{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.produk img{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.produk h4 a{
+        margin-top: 180px !important;
+    }
+    main section.produk p.bintang img{
+        width: 110px !important;
+        height: 20px !important;
+    }
+
+    main section.artikel{
+        width: 780px;
+        height: 600px;
+    }
+    main section.artikel article{
+        width: 750px;
+    }
+    section.artikel article h4:hover{
+        font-size: 17px;
+    }
+    section.artikel article img:hover{
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+}
+
+
+
+@media (max-width: 860px)
+{
+   
+    header span a{
+        display: none;
+    }
+    header span.open{
+        display: block;
+    }
+
+    body{
+        width: 860px ;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+        height: 350px;
+    }
+    header span{
+        float: left;
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .header{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .header ul li{
+       display: none;
+    }
+    .header h4{
+        float: none !important;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+    }
+    .about{
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    .about h2 {
+        font-size: 24px !important;
+    }
+    .about p {
+        font-size: 16px !important;
+    }
+    .lanjut a{
+        font-size: 14px;
+        width: 150px !important;
+    }
+
+    main{
+        width: 95%;
+    }
+    main .judul{
+        font-size: 20px !important;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td p{
+        font-size: 10px;
+        margin-top: 15px !important;
+        padding: 0;
+    }
+    main td img{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 5px;
+    }
+    main section.dokter{
+        height: 350px;
+        width: 780px;
+    }
+    main section.dokter article.dokter{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.dokter img{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.dokter h4 a{
+        margin-top: 150px !important;
+    }
+    
+    main section.produk{
+        height: 350px;
+        width: 780px;
+    }
+    main section.produk article.produk{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.produk img{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    main section.produk h4 a{
+        margin-top: 180px !important;
+    }
+    main section.produk p.bintang img{
+        width: 110px !important;
+        height: 20px !important;
+    }
+
+    main section.artikel{
+        width: 780px;
+        height: 600px;
+    }
+    main section.artikel article{
+        width: 750px;
+    }
+    section.artikel article h4:hover{
+        font-size: 17px;
+    }
+    section.artikel article img:hover{
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+}
+
+
+@media (max-width: 479px)
+{
+    section.fitur tr{
+        overflow: auto;
+    }
+    header span a{
+        display: none;
+    }
+    header span.open{
+        display: block;
+    }
+
+    body{
+        width: 470px ;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+        height: 350px;
+    }
+    header span{
+        float: left;
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .header{
+        width: 470px;
+        margin: 0;
+        padding: 0;
+    }
+    .header ul li{
+       display: none;
+    }
+    .header h4{
+        float: none !important;
+    }
+    header span img{
+        width: 45px !important;
+        height: 45px !important;
+        margin: 0;
+        padding: 0;
+        display: none !important;
+    }
+    .about{
+        width: 470px !important;
+        margin: 0 !important;
+    }
+    .about h2 {
+        font-size: 24px !important;
+        width: 470px !important;
+    }
+    .about p {
+        font-size: 16px !important;
+        width: 470px !important;
+    }
+    .lanjut a{
+        font-size: 14px;
+        width: 150px !important;
+    }
+
+    main{
+        width: 470px;
+    }
+    main .judul{
+        font-size: 18px !important;
+        width: 380px;
+        height: 100px;
+    }
+    main .judul span{
+        float: none !important;
+        margin: 0 !important;
+        padding: 0;
+        margin-top: 20px !important;
+    }
+    main td a{
+        width: 95px;
+    }
+    main td p{
+        font-size: 10px;
+        margin-top: 15px !important;
+        padding: 0;
+    }
+    main td img{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 5px;
+    }
+    main section.dokter{
+        height: 1100px;
+        width: 450px;
+        align-items: center;
+        
+    }
+    main section.dokter article.dokter{
+        width: 300px !important;
+        height: 300px !important;    
+        margin-left: 60px !important;
+    }
+    main section.dokter img{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    main section.dokter h4 a{
+        margin-top: 200px !important;
+    }
+    
+
+    main section.produk{
+        height: 1150px;
+        width: 450px;
+        align-items: center;
+    }
+    main section.produk article.produk{
+        width: 300px !important;
+        height: 300px !important;    
+        margin-left: 60px !important;
+    }
+    main section.produk img{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    main section.produk h4 a{
+        margin-top: 180px !important;
+    }
+    main section.produk p.bintang img{
+        width: 110px !important;
+        height: 20px !important;
+    }
+
+
+    main section.artikel{
+        height: 1100px;
+        width: 450px;
+        align-items: center;
+    }
+    section.artikel img{
+        float: none;
+    }
+    section.artikel h4{
+        float: none !important;
+        padding: 0 !important;
+        text-align: justify;
+    }
+    section.artikel p{
+        float: none !important;
+        padding: 0 !important;
+    }
+    main section.artikel article{
+        width: 250px;
+        height: 300px;
+        margin-left: 80px;
+    }
+    section.artikel article h4:hover{
+        font-size: 17px;
+    }
+    section.artikel article img:hover{
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+}

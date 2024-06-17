@@ -1,0 +1,202 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    line-height: 80px;
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    float: none;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100%;
+    border-bottom: 2px solid gray;
+
+    display: flex;
+    flex-direction: column;
+
+}
+header li a:hover{
+    color: rgb(255, 184, 53);
+}
+main{
+    margin: 0 auto;
+    width: 1048px;
+    padding: 10px;
+    background-color: white;
+    height: 1300px;
+    flex: 1;
+}
+footer{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #FFBA49;
+    height: 50pt;
+    line-height: 50px;
+    color: white;
+    bottom: 0;
+}
+footer p{
+    margin: 10px 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline;
+}
+
+header h1{
+    float: left;
+    width: 160px;
+    color: #FFBA49;
+    padding-left: 15px;
+    font-size: 28px;
+}
+header li{
+    float: left;
+}
+header li a{
+    display: block;
+    padding: 8px;
+    width: 80px;
+    text-decoration: none;
+    color: gray;
+}
+header span a{
+    display: block;
+    float: right;
+    padding: 1px;
+    margin-top: 15px;
+    padding-right: 8px;
+    line-height: 40px;
+}
+header span a img{
+    width: 65px;
+    height: 55px;
+    padding-right: 10px;
+}
+
+header span{
+    padding:10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* Main section */
+
+main{
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+main section.search{
+    max-width: 100%;;
+    margin: 25px;
+    margin-top: 7px;
+    
+}
+main section.search input{
+    padding: 10px;
+    width: 85%;
+}
+main section.search span a{
+    float: right;
+    padding: 10px 40px;
+    background-color: #FFBA49;
+    border-radius: 5px;
+    color: white;
+}
+main section.search span a:hover{
+    background-color: white;
+    border: 1px solid #FFBA49;
+    color: #FFBA49;
+}
+
+.gambar_utama{
+    max-width: 1070px;
+    height: 300px;
+    left: 135px;
+    top: 296px;
+
+    background: #FFE3B4;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.dana{
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.donasi{
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+
+
+.gambar{
+
+    width: 500px;
+    height: 192px;
+    left: 135px;
+    top: 730px;
+    
+    background: #FFE3B4;
+    border-radius: 10px 10px 0px 0px;
+}
+.judul{
+    padding-left: 10px;
+    height: 25px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #535353;
+}
+.btn-donasi{
+    width: 85%;
+    top: 20px;
+    margin: 0 35px;
+    height: 40px;
+    background: #FFBA49;
+    border-radius: 10px;
+    border: 1px solid orange;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+}
+.donasi2{
+    float: inline-end;
+    width: 500px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+
+

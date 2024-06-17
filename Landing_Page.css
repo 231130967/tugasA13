@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+hr {
+  width: 1200px;
+  display: flexbox;
+  margin: 0 auto;
+  color: gray;
+  accent-color: gray;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(Assets/background\ image.jpg);
+  backdrop-filter: blur(2px);
+}
+.con-header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  letter-spacing: 0.5;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.con-header .Logo-tulis {
+    position: absolute;
+    color: transparent;
+    cursor: default;
+    -webkit-text-stroke: 1px #fff;
+    transform: translate(-50%, -50%);
+}
+
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+  letter-spacing: 0.2px;
+}
+.con-header .navbar li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.navbar li a::after {
+  content: "";
+  background-color: white;
+  height: 2px;
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+}
+.navbar li a:hover {
+    color: rgb(255, 176, 30);
+}
+.navbar li a:hover::after {
+  width: 60px;
+  transition: ease-in-out 300ms;
+  background-color: rgb(255, 176, 30);
+}
+
+.navbar li .spesial:hover::after {
+  width: 95px;
+  background-color: rgb(255, 176, 30);
+  transition: ease-in-out 400ms;
+}
+
+.con-header .button {
+  right: -100px;
+}
+.button .register {
+  height: 34px;
+  width: 153px;
+}
+.con-header .button .login {
+  width: 76px;
+  height: 34px;
+}
+.con-header i,
+.button {
+  position: relative;
+  color: white;
+}
+
+.button .register {
+  background-color: rgb(255, 166, 0);
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  border: none;
+}
+.register:hover {
+  font-weight: 800;
+  letter-spacing: 0.5;
+  cursor: pointer;
+  border: solid 1px orange;
+  box-shadow: inset;
+}
+
+.button .login {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.login:hover {
+  background: rgba(255, 166, 0, 1);
+  color: white;
+  transition: ease 300ms;
+  cursor: pointer;
+}
+.containertext {
+  height: 400px;
+  width: fit-content;
+  align-content: center;
+  padding: 30px 60px;
+}
+.con-text {
+  max-width: fit-content;
+  margin-left: 50px;
+}
+
+.con-text .judul {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: 600;
+}
+.con-text .deskripsi {
+  max-width: 500px;
+  height: 20px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.con-text .judul,
+.deskripsi {
+  cursor: default;
+}
+.con-text button {
+  display: inline;
+  margin-right: 40px;
+  background-color: orange;
+  color: white;
+  border: 2px solid orange;
+  padding: 10px 40px;
+  border-radius: 25px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.con-text button:hover {
+  color: orange;
+  background-color: white;
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+}
+.con-text p {
+  width: 40vw;
+  text-wrap: wrap;
+}
